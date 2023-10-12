@@ -1,0 +1,307 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a, form, input, button, address {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Basic styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Header styles */
+header {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+header h1 span {
+    font-weight: bold;
+    color: #FF5C00; /* Adjusted the color for better readability */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9200;
+}
+
+/* Banner styles */
+.banner {
+    background-image: url('bk.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 150px 0;
+    color: #fff9f9;
+}
+
+banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Section styles */
+section {
+    padding: 40px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Style for login and signup buttons */
+.login-button, .signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5C00;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover, .signup-button:hover {
+    background-color: #212121;
+}
+
+
+#about {
+    list-style: none;
+    background-color: #fffcf9;
+    border: 1px solid #ddd;
+    padding: 40px;
+    box-shadow: 0 1px 1px #000000(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+#about:hover {
+    transform: scale(1.05); /* Enlarge the section on hover */
+}
+
+
+/* Style for the entire "Products" section */
+#products {
+    text-align: center;
+    background-color: #000000;
+    padding: 40px;
+}
+
+
+
+/* CSS for the "Add to Cart" button */
+.add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5C00; /* Background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+    /* You can add more styles like font size, margin, etc. */
+}
+
+.add-to-cart:hover {
+    background-color: #212121; /* Darker color on hover */
+}
+
+
+/* Style for the "Our Products" heading */
+#products h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Style for each product list item */
+#products ul li {
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 5px #000000(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for product list items */
+#products ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Style for product images */
+#products ul li img {
+    max-width: 15%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Style for the "Shopping Cart" section */
+#shopping-cart {
+    background-color: #ff9200;
+    padding: 20px;
+    border: 1px solid #e7e1e1;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Style for the cart items and total */
+#cart-items {
+    text-align: left;
+    margin: 10px 0;
+}
+
+/* Style for the "Checkout" button */
+#checkout-button {
+    background-color: #FF5C00;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Style for the shopping cart icon */
+#checkout-button .fas {
+    font-size: 24px; /* Adjust the icon size as needed */
+    margin-right: 5px; /* Add some space between the icon and text */
+    color: #fff; /* Icon color */
+}
+
+
+/* Hover effect for the "Checkout" button */
+#checkout-button:hover {
+    background-color: #212121;
+}
+
+/* Style for the "FAQ" section */
+#faq {
+    background-color: #000000; /* Light gray background color */
+    padding: 40px;
+}
+
+#faq h2{
+    color: #ddd;
+}
+
+.faq-item {
+    background-color: #fdfdfd; /* White background for FAQ items */
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 5px #000000(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: scale(1.05);
+}
+
+/* Style for the "Disclaimer" section */
+#disclaimer {
+    background-color: #f1f1f1; /* Light gray background color */
+    padding: 40px;
+}
+
+/* Style for the "Contact Us" section */
+#contact {
+    background-color: #FF5C00; /* A different background color */
+    color: #fff; /* White text color for contrast */
+    padding: 40px;
+}
+
+address {
+    margin-top: 10px;
+    color: #fff; /* Text color for the address in the "Contact Us" section */
+}
+
+/* Add transitions and other styles as needed for a fancy look. */
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #212121;
+    color: #fff;
+}
+
+/* Active navigation link styles */
+nav ul li a.active {
+    font-weight: bold;
+}
+
+/* Form styles */
+#product-search-form {
+    display: flex;
+    gap: 10px;
+}
+
+#search-input {
+    width: 200px;
+    padding: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff9200;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF5C00;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .banner {
+        padding: 60px 0;
+    }
+
+    #filtered-products {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

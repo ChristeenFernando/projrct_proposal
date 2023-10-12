@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackersHub - Ethical Hacking Devices</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1><span>H</span>ackers<span>H</span>ub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#faq">FAQ/Help</a></li>
+                <li><a href="#disclaimer">Disclaimer</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <form id="product-search-form">
+            <input type="text" id="search-input" placeholder="Search Products...">
+            <button type="submit">Search</button>
+        </form>
+        
+        
+    </header>
+    
+    <section id="home">
+        <div class="banner">
+            <h2>Welcome to HackersHub</h2>
+            <p>Your source for ethical hacking devices.</p>
+        </div>
+
+        <div class="button-container">
+            <a href="#login" class="login-button">Login</a>
+            <a href="#signup" class="signup-button">Sign Up</a>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+<p>We are a dedicated team of cybersecurity enthusiasts on a mission to enhance digital security through ethical hacking. With a shared passion for safeguarding digital landscapes, we provide ethical hackers with the finest tools, resources, and knowledge needed to protect and strengthen the digital world.</p>
+<p>Our journey began with a simple yet powerful idea: to make the internet a safer place for everyone. Over the years, we've grown into a vibrant community of like-minded individuals, all driven by the common goal of fortifying the digital realm against evolving threats.</p>
+<p>At HackersHub, we believe in the power of collaboration, education, and innovation. We offer a wide range of resources, from tutorials and courses to cutting-edge cybersecurity tools and expert guidance. We're committed to promoting ethical hacking as a force for good, helping organizations, individuals, and society as a whole stay protected in an increasingly connected world.</p>
+<p>Join us in our mission to make the digital world more secure. Whether you're a seasoned ethical hacker, a beginner looking to learn, or an organization seeking robust cybersecurity solutions, HackersHub is here to support and empower you on your journey.</p>
+</p>
+    </section>
+
+    <section id="products">
+        <div id="filtered-products"></div>
+
+        <h2>Our Products</h2>
+        <ul>
+            <li>
+                <h3>Flipper Zero</h3>
+                <img src="Flipper.webp" alt="Flipper Zero Image">
+                <p>Description: A versatile open-source multi-tool for security researchers and hackers.</p>
+                <p>Price: $99.99</p>
+                <button class="add-to-cart" data-price="99.99">Add to Cart</button>
+            </li>
+            <li>
+                <h3>USB Rubber Ducky</h3>
+                <img src="usbrubberducky.webp" alt="USB Rubber Ducky Image">
+                <p>Description: A keystroke injection tool designed for pentesters and security professionals.</p>
+                <p>Price: $49.99</p>
+                <button class="add-to-cart" data-price="49.99">Add to Cart</button>
+            </li>
+            <li>
+                <h3>Raspberry Pi 4</h3>
+                <img src="raspberrypi4.jpg" alt="Raspberry Pi 4 Image">
+                <p>Description: A powerful single-board computer for various DIY projects and IoT applications.</p>
+                <p>Price: $35.00</p>
+                <button class="add-to-cart" data-price="35.00">Add to Cart</button>
+            </li>
+            <li>
+                <h3>WiFi Pineapple</h3>
+                <img src="wifipineapple.png" alt="WIFI Pineapple Image">
+                <p>Description: A wireless penetration testing tool for assessing and securing Wi-Fi networks.</p>
+                <p>Price: $149.99</p>
+                <button class="add-to-cart" data-price="149.99">Add to Cart</button>
+            </li>
+            <li>
+                <h3>LAN Turtle</h3>
+                <img src="lanturtle.webp" alt="LAN Turtle Image">
+                <p>Description: A covert network penetration testing tool designed for red teaming.</p>
+                <p>Price: $79.99</p>
+                <button class="add-to-cart" data-price="79.99">Add to Cart</button>
+            </li>
+        </ul>
+        <section id="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-button">
+                <i class="fas fa-shopping-cart"></i> Checkout
+            </button>
+            
+        </section>
+        </section>
+        
+    </section>
+    
+
+    <section id="faq">
+        <h2>FAQ/Help</h2>
+        <div class="faq-item">
+            <h3>Question 1: What is ethical hacking?</h3>
+            <p>Answer: Ethical hacking, also known as white-hat hacking, is the practice of intentionally probing computer systems, networks, or applications for security vulnerabilities. Ethical hackers do this to identify and fix potential security weaknesses before malicious hackers can exploit them.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Question 2: How can I get started with ethical hacking?</h3>
+            <p>Answer: To get started with ethical hacking, you can learn about computer networks, security concepts, and programming languages. Consider obtaining certifications like Certified Ethical Hacker (CEH) or CompTIA Security+ to enhance your skills and credibility.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Question 3: What tools are commonly used by ethical hackers?</h3>
+            <p>Answer: Ethical hackers often use a variety of tools, including network scanners, vulnerability assessment tools, password crackers, and penetration testing frameworks. Some popular tools include Nmap, Wireshark, Metasploit, and John the Ripper.</p>
+        </div>
+        
+    </section>
+    
+    <section id="disclaimer">
+        <h2>Disclaimer</h2>
+        <p>The information provided on this website is for educational and informational purposes only. We do not promote or endorse any illegal or malicious activities. Users are responsible for ensuring they comply with all applicable laws and regulations when using the products or information provided here.</p>
+        <p>This website and its owners are not responsible for any actions taken by users based on the information presented. Use the provided resources responsibly and ethically.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, please feel free to contact us:</p>
+        <address>
+            Email: <a href="mailto:contact@hackershub.com">contact@hackershub.com</a><br>
+            Phone: +94 703134520<br>
+            Address: 1234 Cyber Street, Tech City
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 HackersHub - Ethical Hacking Devices</p>
+    </footer>
+
+    <script> 
+        function showConfirmation() {
+            alert("Thank you for your inquiry! We will get back to you soon.");
+        }
+    
+        // Function to highlight the active navigation link based on the current section.
+        function highlightActiveLink() {
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll("nav ul li a");
+    
+            window.addEventListener("scroll", () => {
+                let current = "";
+    
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+    
+                    if (pageYOffset >= sectionTop - sectionHeight / 2) {
+                        current = section.getAttribute("id");
+                    }
+                });
+    
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href").substring(1) === current) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+        }
+    
+        // Call the function to highlight the active navigation link.
+        highlightActiveLink();
+    
+        const products = [
+            {
+                name: "Flipper Zero",
+                description: "A versatile open-source multi-tool for security researchers and hackers.",
+                price: "$99.99"
+            },
+            {
+                name: "USB Rubber Ducky",
+                description: "A keystroke injection tool designed for pentesters and security professionals.",
+                price: "$49.99"
+            },
+            {
+                name: "Raspberry Pi 4",
+                description: "A powerful single-board computer for various DIY projects and IoT applications.",
+                price: "$35.00"
+            },
+            {
+                name: "WiFi Pineapple",
+                description: "A wireless penetration testing tool for assessing and securing Wi-Fi networks.",
+                price: "$149.99"
+            },
+            {
+                name: "LAN Turtle",
+                description: "A covert network penetration testing tool designed for red teaming.",
+                price: "$79.99"
+            }
+        ];
+    
+        // Function to filter and display products based on the search query
+        function filterProducts(query) {
+            const filteredProducts = products.filter((product) => {
+                return (
+                    product.name.toLowerCase().includes(query.toLowerCase()) ||
+                    product.description.toLowerCase().includes(query.toLowerCase())
+                );
+            });
+    
+            displayProducts(filteredProducts);
+        }
+    
+        // Function to display filtered products in the "filtered-products" div
+        function displayProducts(filteredProducts) {
+            const filteredProductsContainer = document.getElementById("filtered-products");
+    
+            if (filteredProducts.length === 0) {
+                filteredProductsContainer.innerHTML = "<p>No matching products found.</p>";
+            } else {
+                const productsList = filteredProducts.map((product) => {
+                    return `
+                        <div class="product">
+                            <h3>${product.name}</h3>
+                            <p>${product.description}</p>
+                            <p>Price: ${product.price}</p>
+                        </div>
+                    `;
+                });
+    
+                filteredProductsContainer.innerHTML = productsList.join("");
+            }
+        }
+    
+        // Event listener for the form submission
+        document.getElementById("product-search-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            const searchInput = document.getElementById("search-input").value;
+            filterProducts(searchInput);
+        });
+    
+        // Get product elements and the cart
+    const productItems = document.querySelectorAll("#products ul li");
+    const cartItems = document.getElementById("cart-items");
+    const cartTotal = document.getElementById("cart-total");
+    const checkoutButton = document.getElementById("checkout-button");
+    
+    // Initialize cart items and total
+    const cart = [];
+    let total = 0;
+    
+    // Function to update the cart and total
+    function updateCart() {
+        cartItems.innerHTML = ""; // Clear existing cart items
+        total = 0;
+    
+        cart.forEach((item) => {
+            const cartItem = document.createElement("li");
+            cartItem.textContent = item.name + " - $" + item.price.toFixed(2);
+            cartItems.appendChild(cartItem);
+            total += item.price;
+        });
+    
+        cartTotal.textContent = total.toFixed(2);
+    }
+    
+    // Event listener for adding items to the cart
+    productItems.forEach((product, index) => {
+        const addToCartButton = product.querySelector(".add-to-cart");
+        const price = parseFloat(addToCartButton.getAttribute("data-price"));
+        const name = product.querySelector("h3").textContent;
+    
+        addToCartButton.addEventListener("click", () => {
+            cart.push({ name, price });
+            updateCart();
+        });
+    });
+    
+    // Event listener for the checkout button
+    checkoutButton.addEventListener("click", () => {
+        alert("Total: $" + total.toFixed(2)); // You can replace this with your desired checkout logic
+    });
+    
+        </script>
+
+</body>
+</html>
